@@ -23,7 +23,7 @@ namespace storefinal
             Form3 f3 = new Form3();
             f3.ShowDialog();
         }
-
+        //test
         private void btnProductSave_Click(object sender, EventArgs e)
         {
             bool x = SqlGetData.InserData("Insert into tblproduct values( '" + txtProductName.Text + "','" + txtUnitPrice.Text + "')");
