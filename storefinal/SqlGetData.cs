@@ -8,6 +8,9 @@ using System.Data.SqlClient;
 
 namespace storefinal
 {
+    /// <summary>
+    /// This is related to the Database access from the application
+    /// </summary>
     class SqlGetData
     {
         static SqlConnection con;
@@ -15,6 +18,10 @@ namespace storefinal
         static DataSet ds;
         static SqlCommand sqlcmd;
         static DataTable dt;
+
+        public void StoreFinal(){
+            // Class needs constructor
+        }
 
         public static SqlConnection GetConnection()
         {
