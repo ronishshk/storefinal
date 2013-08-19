@@ -77,7 +77,7 @@ namespace storefinal
         {
 
             bool x;
-            x = SqlGetData.InserData("Insert into tblorder values('"+textBoxTotalAmount.Text+"','"+comboBoxCustomer.SelectedItem+"','"+comboBoxProduct.SelectedItem+"')");
+            x = SqlGetData.InsertData("Insert into tblorder values('"+textBoxTotalAmount.Text+"','"+comboBoxCustomer.SelectedItem+"','"+comboBoxProduct.SelectedItem+"')");
             if (x == true)
             {
                 MessageBox.Show("Data Successfully inserted.");

@@ -26,7 +26,7 @@ namespace storefinal
         //test
         private void btnProductSave_Click(object sender, EventArgs e)
         {
-            bool x = SqlGetData.InserData("Insert into tblproduct values( '" + txtProductName.Text + "','" + txtUnitPrice.Text + "')");
+            bool x = SqlGetData.InsertData("Insert into tblproduct values( '" + txtProductName.Text + "','" + txtUnitPrice.Text + "')");
             if (x == true)
             {
                 MessageBox.Show("Data Successfully inserted.");

@@ -22,7 +22,7 @@ namespace storefinal
             return con;
         }
 
-        public static void disconnect()
+        public static void Disconnect()
         {
             if (con.State == ConnectionState.Open)
             {
@@ -47,13 +47,13 @@ namespace storefinal
             }
             finally
             {
-                disconnect();
+                Disconnect();
                 
             }
             return dt;
         }
         
-        public static bool InserData(string query)
+        public static bool InsertData(string query)
         {
             SqlCommand cmd = new SqlCommand(query, GetConnection());
             con.Open();
@@ -84,7 +84,7 @@ namespace storefinal
             }
             finally
             {
-                disconnect();
+                Disconnect();
             }
             
         }
