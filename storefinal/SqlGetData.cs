@@ -53,7 +53,7 @@ namespace storefinal
             return dt;
         }
         
-        public static bool InserData(string query)
+        public static bool InsertData(string query)
         {
             SqlCommand cmd = new SqlCommand(query, GetConnection());
             con.Open();

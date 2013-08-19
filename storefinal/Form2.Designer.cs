@@ -39,22 +39,23 @@
             // 
             // txtProductName
             // 
-            this.txtProductName.Location = new System.Drawing.Point(207, 95);
+            this.txtProductName.Location = new System.Drawing.Point(121, 75);
             this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(100, 20);
+            this.txtProductName.Size = new System.Drawing.Size(137, 20);
             this.txtProductName.TabIndex = 0;
+            this.txtProductName.TextChanged += new System.EventHandler(this.txtProductName_TextChanged);
             // 
             // txtUnitPrice
             // 
-            this.txtUnitPrice.Location = new System.Drawing.Point(207, 144);
+            this.txtUnitPrice.Location = new System.Drawing.Point(121, 108);
             this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(100, 20);
+            this.txtUnitPrice.Size = new System.Drawing.Size(137, 20);
             this.txtUnitPrice.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 102);
+            this.label1.Location = new System.Drawing.Point(28, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 2;
@@ -63,7 +64,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(100, 147);
+            this.label2.Location = new System.Drawing.Point(28, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 3;
@@ -74,15 +75,15 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(177, 21);
+            this.label3.Location = new System.Drawing.Point(28, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 16);
+            this.label3.Size = new System.Drawing.Size(111, 18);
             this.label3.TabIndex = 4;
             this.label3.Text = "Product Entry";
             // 
             // btnProductSave
             // 
-            this.btnProductSave.Location = new System.Drawing.Point(207, 191);
+            this.btnProductSave.Location = new System.Drawing.Point(121, 163);
             this.btnProductSave.Name = "btnProductSave";
             this.btnProductSave.Size = new System.Drawing.Size(75, 23);
             this.btnProductSave.TabIndex = 5;
@@ -92,7 +93,7 @@
             // 
             // btnOrderEntry
             // 
-            this.btnOrderEntry.Location = new System.Drawing.Point(207, 235);
+            this.btnOrderEntry.Location = new System.Drawing.Point(121, 134);
             this.btnOrderEntry.Name = "btnOrderEntry";
             this.btnOrderEntry.Size = new System.Drawing.Size(75, 23);
             this.btnOrderEntry.TabIndex = 6;
@@ -104,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 261);
+            this.ClientSize = new System.Drawing.Size(300, 202);
             this.Controls.Add(this.btnOrderEntry);
             this.Controls.Add(this.btnProductSave);
             this.Controls.Add(this.label3);
@@ -114,6 +115,7 @@
             this.Controls.Add(this.txtProductName);
             this.Name = "Form2";
             this.Text = "FormProduct";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

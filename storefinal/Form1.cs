@@ -20,7 +20,7 @@ namespace storefinal
         //hello world!!
         private void btnSave_Click(object sender, EventArgs e)
         {
-            bool x = SqlGetData.InserData("Insert into tblcustomer values( '" + Nametxt.Text + "','" + Addresstxt.Text + "','"+ Phonetxt+"')");
+            bool x = SqlGetData.InsertData("Insert into tblcustomer values( '" + Nametxt.Text + "','" + Addresstxt.Text + "','"+ Phonetxt+"')");
             if (x == true)
             {
                 MessageBox.Show("Data Successfully inserted.");
