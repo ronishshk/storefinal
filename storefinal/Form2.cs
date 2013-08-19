@@ -38,6 +38,16 @@ namespace storefinal
                 MessageBox.Show("Error occurred while inserting data.");
             }
         }
+
+        private void txtProductName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
         
 
        

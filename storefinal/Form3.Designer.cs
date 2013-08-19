@@ -54,7 +54,7 @@
             // 
             // btnOrderSave
             // 
-            this.btnOrderSave.Location = new System.Drawing.Point(153, 350);
+            this.btnOrderSave.Location = new System.Drawing.Point(236, 351);
             this.btnOrderSave.Name = "btnOrderSave";
             this.btnOrderSave.Size = new System.Drawing.Size(75, 23);
             this.btnOrderSave.TabIndex = 0;
@@ -228,7 +228,7 @@
             // 
             // btnProduct
             // 
-            this.btnProduct.Location = new System.Drawing.Point(2, 0);
+            this.btnProduct.Location = new System.Drawing.Point(96, 12);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(75, 23);
             this.btnProduct.TabIndex = 20;
@@ -240,7 +240,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1015, 523);
+            this.ClientSize = new System.Drawing.Size(960, 461);
             this.Controls.Add(this.btnProduct);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label8);
