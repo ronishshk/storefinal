@@ -22,7 +22,7 @@ namespace storefinal
             return con;
         }
 
-        public static void disconnect()
+        public static void Disconnect()
         {
             if (con.State == ConnectionState.Open)
             {
@@ -47,7 +47,7 @@ namespace storefinal
             }
             finally
             {
-                disconnect();
+                Disconnect();
                 
             }
             return dt;
@@ -84,7 +84,7 @@ namespace storefinal
             }
             finally
             {
-                disconnect();
+                Disconnect();
             }
             
         }
